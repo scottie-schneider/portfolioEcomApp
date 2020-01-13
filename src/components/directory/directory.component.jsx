@@ -48,7 +48,7 @@ class Directory extends React.PureComponent {
     return (
       <div className="directory-menu">
         {
-          this.state.sections.map({title, imageUrl, id} => {
+          this.state.sections.map(({title, imageUrl, id}) => {
             return (
               <MenuItem 
                 key={id}  
