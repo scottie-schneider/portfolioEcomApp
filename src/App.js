@@ -19,9 +19,30 @@ class App extends Component {
   unsubscribeFromAuth = null;
 
   componentDidMount(){
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
-      createUserProfileDocument(user);
-    })
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      // if a user signs in, we'll check if they're authenticated.
+      if(userAuth){
+        // if they are we'll get back the userRef
+        const userRef = await createUserProfileDocument(userAuth);
+        // we're going to listen to any changes to the data, and set state of local app
+        userRef.onSnapshot(snapShot => {
+          this.setState(
+            {
+              currentUser: {
+                id: snapShot.id,
+                ...snapShot.data()
+              }
+            },
+            // callback to setstate, so we don't log state before it completes.
+            () => {
+              console.log(this.state);
+            })
+        });        
+      } else {
+        // this evaluates to null, if the user has signed out.
+        this.setState({ currentUser: userAuth });
+      }      
+    });
   }
   componentWillUnmount() {
     this.unsubscribeFromAuth();
