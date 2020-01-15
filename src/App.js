@@ -35,7 +35,7 @@ class App extends Component {
             },
             // callback to setstate, so we don't log state before it completes.
             () => {
-              console.log(this.state);
+              // console.log(this.state);
             })
         });        
       } else {
