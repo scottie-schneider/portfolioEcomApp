@@ -2,13 +2,8 @@
   "name": "complete-react-course",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "eslint-utils": "^2.0.0",
+  "dependencies": {    
     "firebase": "^7.6.2",
-    "handlebars": "^4.7.2",
-    "js-yaml": "^3.13.1",
-    "lodash.template": "^4.5.0",
-    "mixin-deep": "^2.0.1",
     "node-sass": "^4.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -16,9 +11,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "2.1.8",
     "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
-    "serialize-javascript": "^2.1.2",
-    "set-value": "^3.0.1"
+    "redux-logger": "^3.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
