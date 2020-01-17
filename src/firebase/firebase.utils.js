@@ -3,13 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
-  authDomain: 'portfolio-ecomm-app.herokuapp.com',
-  databaseURL: 'https://crwn-db.firebaseio.com',
-  projectId: 'crwn-db',
-  storageBucket: 'crwn-db.appspot.com',
-  messagingSenderId: '850995411664',
-  appId: '1:850995411664:web:7ddc01d597846f65'
+  apiKey: "AIzaSyB7WH4U63ScpLwS26Xg9FpRmGk-f3N-MJE",
+  authDomain: "portfolioecommapp.firebaseapp.com",
+  databaseURL: "https://portfolioecommapp.firebaseio.com",
+  projectId: "portfolioecommapp",
+  storageBucket: "portfolioecommapp.appspot.com",
+  messagingSenderId: "802270467837",
+  appId: "1:802270467837:web:499e35713d79234c0e1094"
 };
 
 firebase.initializeApp(config);
