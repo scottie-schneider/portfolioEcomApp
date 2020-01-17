@@ -1,4 +1,4 @@
-const INITAL_STATE = {
+const INITIAL_STATE = {
   sections: [
     {
       title: 'hats',
@@ -33,13 +33,13 @@ const INITAL_STATE = {
       linkUrl: 'shop/mens'
     }
   ]
-}
+};
 
-const directoryReducer = (state = INITAL_STATE, action) => {
-  switch(action.type) {
-    default: 
+const directoryReducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    default:
       return state;
   }
-}
+};
 
 export default directoryReducer;
